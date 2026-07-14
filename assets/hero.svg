@@ -1,0 +1,88 @@
+<svg width="1200" height="460" viewBox="0 0 1200 460" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Harsh Tuli — Software Engineer">
+  <defs>
+    <linearGradient id="nameGrad" x1="80" y1="200" x2="700" y2="200" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F0F6FC"/>
+      <stop offset="0.55" stop-color="#58A6FF"/>
+      <stop offset="1" stop-color="#00E5FF"/>
+    </linearGradient>
+    <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#00E5FF"/>
+    </linearGradient>
+    <filter id="soft" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="60"/>
+    </filter>
+    <clipPath id="frame"><rect width="1200" height="460" rx="24"/></clipPath>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="1.2" cy="1.2" r="1.2" fill="#F0F6FC" opacity="0.045"/>
+    </pattern>
+  </defs>
+  <style>
+    .f { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    .blob1 { animation: drift1 16s ease-in-out infinite alternate; }
+    .blob2 { animation: drift2 20s ease-in-out infinite alternate; }
+    .blob3 { animation: drift3 24s ease-in-out infinite alternate; }
+    @keyframes drift1 { from { transform: translate(0,0) } to { transform: translate(-90px,40px) } }
+    @keyframes drift2 { from { transform: translate(0,0) } to { transform: translate(60px,-50px) } }
+    @keyframes drift3 { from { transform: translate(0,0) } to { transform: translate(80px,-30px) } }
+    .role { opacity: 0; animation: cycle 15s linear infinite; }
+    .r1 { animation-delay: 0s } .r2 { animation-delay: 3s } .r3 { animation-delay: 6s }
+    .r4 { animation-delay: 9s } .r5 { animation-delay: 12s }
+    @keyframes cycle {
+      0% { opacity: 0; transform: translateY(8px) }
+      2.5% { opacity: 1; transform: translateY(0) }
+      18% { opacity: 1; transform: translateY(0) }
+      21% { opacity: 0; transform: translateY(-8px) }
+      100% { opacity: 0 }
+    }
+    .caret { animation: blink 1.1s steps(1) infinite; }
+    @keyframes blink { 0%, 55% { opacity: 1 } 56%, 100% { opacity: 0 } }
+    .orbit { transform-origin: 985px 235px; animation: spin 30s linear infinite; }
+    .orbit2 { transform-origin: 985px 235px; animation: spin 45s linear infinite reverse; }
+    @keyframes spin { to { transform: rotate(360deg) } }
+    .pulse { animation: pulse 3s ease-in-out infinite; }
+    @keyframes pulse { 0%,100% { opacity: .55 } 50% { opacity: 1 } }
+  </style>
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="460" fill="#0D1117"/>
+    <rect width="1200" height="460" fill="url(#dots)"/>
+    <g class="blob1"><ellipse cx="980" cy="80" rx="320" ry="190" fill="#7C3AED" opacity="0.30" filter="url(#soft)"/></g>
+    <g class="blob2"><ellipse cx="1130" cy="400" rx="300" ry="170" fill="#58A6FF" opacity="0.26" filter="url(#soft)"/></g>
+    <g class="blob3"><ellipse cx="120" cy="440" rx="280" ry="150" fill="#00E5FF" opacity="0.14" filter="url(#soft)"/></g>
+
+    <g class="orbit">
+      <circle cx="985" cy="235" r="128" stroke="url(#ringGrad)" stroke-opacity="0.5" stroke-width="1.2" stroke-dasharray="3 7"/>
+      <circle cx="1113" cy="235" r="5" fill="#00E5FF"/>
+    </g>
+    <g class="orbit2">
+      <circle cx="985" cy="235" r="86" stroke="#F0F6FC" stroke-opacity="0.14" stroke-width="1"/>
+      <circle cx="899" cy="235" r="3.5" fill="#7C3AED"/>
+    </g>
+    <circle class="pulse" cx="985" cy="235" r="7" fill="#58A6FF"/>
+    <circle cx="985" cy="235" r="16" stroke="#58A6FF" stroke-opacity="0.35" stroke-width="1"/>
+
+    <text x="82" y="132" class="f" font-size="15" font-weight="600" letter-spacing="7" fill="#8B949E">HELLO, I'M</text>
+
+    <text x="78" y="222" class="f" font-size="82" font-weight="800" letter-spacing="-2" fill="url(#nameGrad)">Harsh Tuli</text>
+
+    <text x="82" y="272" class="f caret" font-size="21" font-weight="700" fill="#00E5FF">❯</text>
+    <g class="f" font-size="21" font-weight="600" fill="#F0F6FC">
+      <text x="106" y="272" class="role r1">Software Engineer</text>
+      <text x="106" y="272" class="role r2">Full-Stack Developer</text>
+      <text x="106" y="272" class="role r3">Shopify App &amp; Theme Developer</text>
+      <text x="106" y="272" class="role r4">React Native Developer</text>
+      <text x="106" y="272" class="role r5">AI Product Builder</text>
+    </g>
+
+    <text x="82" y="330" class="f" font-size="17" fill="#8B949E">Crafting AI-powered products and scalable web applications</text>
+    <text x="82" y="356" class="f" font-size="17" fill="#8B949E">with obsessive attention to detail.</text>
+
+    <g opacity="0.9">
+      <path d="M86 398 c0 -5.5 4.5 -10 10 -10 s10 4.5 10 10 c0 7 -10 16 -10 16 s-10 -9 -10 -16 z" fill="none" stroke="#58A6FF" stroke-width="1.6"/>
+      <circle cx="96" cy="398" r="3.2" fill="#58A6FF"/>
+      <text x="116" y="410" class="f" font-size="15" font-weight="500" fill="#C9D1D9">Mumbai, India</text>
+    </g>
+
+    <rect x="0.5" y="0.5" width="1199" height="459" rx="23.5" stroke="#F0F6FC" stroke-opacity="0.09"/>
+  </g>
+</svg>

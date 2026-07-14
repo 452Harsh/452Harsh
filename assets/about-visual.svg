@@ -1,0 +1,56 @@
+<svg width="420" height="380" viewBox="0 0 420 380" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Abstract code orbit illustration">
+  <defs>
+    <linearGradient id="coreGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#58A6FF"/>
+      <stop offset="1" stop-color="#7C3AED"/>
+    </linearGradient>
+    <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+  <style>
+    .f { font-family: 'SF Mono', SFMono-Regular, ui-monospace, Menlo, Consolas, monospace; }
+    .ring1 { transform-origin: 210px 190px; animation: spin 26s linear infinite; }
+    .ring2 { transform-origin: 210px 190px; animation: spin 40s linear infinite reverse; }
+    .ring3 { transform-origin: 210px 190px; animation: spin 58s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg) } }
+    .float { animation: float 6s ease-in-out infinite; }
+    @keyframes float { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-10px) } }
+    .breathe { animation: breathe 5s ease-in-out infinite; }
+    @keyframes breathe { 0%,100% { opacity: 0.5 } 50% { opacity: 0.95 } }
+  </style>
+
+  <circle class="breathe" cx="210" cy="190" r="70" fill="url(#coreGrad)" opacity="0.35" filter="url(#softGlow)"/>
+
+  <g class="ring1">
+    <circle cx="210" cy="190" r="112" stroke="#58A6FF" stroke-opacity="0.35" stroke-width="1.2" stroke-dasharray="4 8"/>
+    <circle cx="322" cy="190" r="6" fill="#58A6FF"/>
+  </g>
+  <g class="ring2">
+    <circle cx="210" cy="190" r="146" stroke="#7C3AED" stroke-opacity="0.3" stroke-width="1.2" stroke-dasharray="2 10"/>
+    <circle cx="64" cy="190" r="4.5" fill="#7C3AED"/>
+  </g>
+  <g class="ring3">
+    <circle cx="210" cy="190" r="176" stroke="#00E5FF" stroke-opacity="0.22" stroke-width="1" stroke-dasharray="1 12"/>
+    <circle cx="210" cy="14" r="3.5" fill="#00E5FF"/>
+  </g>
+
+  <g class="float">
+    <rect x="152" y="132" width="116" height="116" rx="26" fill="#161B22" stroke="#F0F6FC" stroke-opacity="0.14"/>
+    <rect x="152" y="132" width="116" height="116" rx="26" fill="url(#coreGrad)" opacity="0.12"/>
+    <text x="210" y="204" text-anchor="middle" class="f" font-size="34" font-weight="600" fill="#F0F6FC">{ }</text>
+  </g>
+
+  <g class="float" style="animation-delay:1.2s">
+    <rect x="300" y="86" width="82" height="34" rx="17" fill="#161B22" stroke="#58A6FF" stroke-opacity="0.4"/>
+    <text x="341" y="108" text-anchor="middle" class="f" font-size="13" fill="#58A6FF">ship()</text>
+  </g>
+  <g class="float" style="animation-delay:2.4s">
+    <rect x="34" y="268" width="96" height="34" rx="17" fill="#161B22" stroke="#00E5FF" stroke-opacity="0.4"/>
+    <text x="82" y="290" text-anchor="middle" class="f" font-size="13" fill="#00E5FF">iterate()</text>
+  </g>
+  <g class="float" style="animation-delay:3.6s">
+    <rect x="296" y="286" width="88" height="34" rx="17" fill="#161B22" stroke="#7C3AED" stroke-opacity="0.5"/>
+    <text x="340" y="308" text-anchor="middle" class="f" font-size="13" fill="#A78BFA">craft()</text>
+  </g>
+</svg>

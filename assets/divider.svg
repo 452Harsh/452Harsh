@@ -1,0 +1,30 @@
+<svg width="1200" height="36" viewBox="0 0 1200 36" fill="none" xmlns="http://www.w3.org/2000/svg" role="presentation">
+  <defs>
+    <linearGradient id="line" x1="0" y1="18" x2="1200" y2="18" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0D1117"/>
+      <stop offset="0.2" stop-color="#58A6FF" stop-opacity="0.55"/>
+      <stop offset="0.5" stop-color="#7C3AED" stop-opacity="0.8"/>
+      <stop offset="0.8" stop-color="#00E5FF" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#0D1117"/>
+    </linearGradient>
+    <radialGradient id="glowdot">
+      <stop stop-color="#00E5FF"/>
+      <stop offset="1" stop-color="#00E5FF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <style>
+    .traveller { animation: travel 7s ease-in-out infinite; }
+    @keyframes travel {
+      0% { transform: translateX(0px); opacity: 0 }
+      8% { opacity: 1 }
+      92% { opacity: 1 }
+      100% { transform: translateX(1080px); opacity: 0 }
+    }
+  </style>
+  <rect x="60" y="17" width="1080" height="1.5" fill="url(#line)"/>
+  <g class="traveller">
+    <circle cx="60" cy="17.75" r="14" fill="url(#glowdot)" opacity="0.5"/>
+    <circle cx="60" cy="17.75" r="3" fill="#00E5FF"/>
+  </g>
+  <rect x="592" y="13.75" width="8" height="8" rx="1.5" transform="rotate(45 596 17.75)" fill="#7C3AED"/>
+</svg>

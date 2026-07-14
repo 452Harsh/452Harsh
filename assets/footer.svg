@@ -1,0 +1,25 @@
+<svg width="1200" height="150" viewBox="0 0 1200 150" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Footer">
+  <defs>
+    <linearGradient id="fl" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0D1117"/><stop offset="0.3" stop-color="#7C3AED"/><stop offset="0.7" stop-color="#00E5FF"/><stop offset="1" stop-color="#0D1117"/>
+    </linearGradient>
+    <filter id="fb" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="50"/></filter>
+    <clipPath id="fc"><rect width="1200" height="150"/></clipPath>
+  </defs>
+  <style>
+    .f { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    .b1 { animation: dr1 18s ease-in-out infinite alternate; }
+    .b2 { animation: dr2 24s ease-in-out infinite alternate; }
+    @keyframes dr1 { from { transform: translateX(0) } to { transform: translateX(120px) } }
+    @keyframes dr2 { from { transform: translateX(0) } to { transform: translateX(-140px) } }
+    .tw { animation: tw 3s ease-in-out infinite; }
+    @keyframes tw { 0%,100% { opacity: .4 } 50% { opacity: 1 } }
+  </style>
+  <g clip-path="url(#fc)">
+    <g class="b1"><ellipse cx="380" cy="165" rx="330" ry="90" fill="#7C3AED" opacity="0.22" filter="url(#fb)"/></g>
+    <g class="b2"><ellipse cx="840" cy="170" rx="330" ry="90" fill="#00E5FF" opacity="0.14" filter="url(#fb)"/></g>
+    <rect x="100" y="30" width="1000" height="1.2" fill="url(#fl)" opacity="0.5"/>
+    <text x="600" y="84" text-anchor="middle" class="f" font-size="15.5" font-weight="600" fill="#C9D1D9">Designed &amp; built with care — every pixel intentional.</text>
+    <text x="600" y="112" text-anchor="middle" class="f" font-size="13" fill="#8B949E">Harsh Tuli · Mumbai · <tspan class="tw" fill="#00E5FF">available for interesting problems</tspan></text>
+  </g>
+</svg>

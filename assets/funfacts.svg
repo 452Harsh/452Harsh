@@ -1,0 +1,37 @@
+<svg width="1200" height="190" viewBox="0 0 1200 190" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Fun facts">
+  <style>
+    .f { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    .m { font-family: 'SF Mono', SFMono-Regular, ui-monospace, Menlo, Consolas, monospace; }
+    .in { animation: in .8s cubic-bezier(.22,1,.36,1) both; }
+    .i2 { animation-delay: .18s } .i3 { animation-delay: .36s }
+    @keyframes in { from { opacity: 0; transform: translateY(12px) } to { opacity: 1; transform: translateY(0) } }
+    .wink { animation: wink 4s ease-in-out infinite; }
+    @keyframes wink { 0%,100% { opacity: .5 } 50% { opacity: 1 } }
+    .head { font-size: 15px; font-weight: 700; fill: #F0F6FC; }
+    .body { font-size: 13px; fill: #8B949E; }
+  </style>
+
+  <g class="in">
+    <rect x="10" y="10" width="380" height="170" rx="20" fill="#11161D" stroke="#F0F6FC" stroke-opacity="0.1"/>
+    <text x="42" y="62" class="m wink" font-size="20" fill="#58A6FF">☾</text>
+    <text x="42" y="102" class="f head">Dark mode isn't a preference.</text>
+    <text x="42" y="124" class="f body">It's a lifestyle. This page is proof —</text>
+    <text x="42" y="142" class="f body">there is no light theme and there never will be.</text>
+  </g>
+
+  <g class="in i2">
+    <rect x="410" y="10" width="380" height="170" rx="20" fill="#11161D" stroke="#F0F6FC" stroke-opacity="0.1"/>
+    <text x="442" y="62" class="m wink" font-size="20" fill="#A78BFA" style="animation-delay:.8s">◔</text>
+    <text x="442" y="102" class="f head">I judge apps by their loading states.</text>
+    <text x="442" y="124" class="f body">A skeleton screen with good rhythm tells you</text>
+    <text x="442" y="142" class="f body">everything about who built it.</text>
+  </g>
+
+  <g class="in i3">
+    <rect x="810" y="10" width="380" height="170" rx="20" fill="#11161D" stroke="#F0F6FC" stroke-opacity="0.1"/>
+    <text x="842" y="62" class="m wink" font-size="20" fill="#00E5FF" style="animation-delay:1.6s">↻</text>
+    <text x="842" y="102" class="f head">My portfolio ships more than I sleep.</text>
+    <text x="842" y="124" class="f body">Redesigned more often than my resume —</text>
+    <text x="842" y="142" class="f body">craftsmanship is a loop, not a milestone.</text>
+  </g>
+</svg>
