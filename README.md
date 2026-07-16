@@ -114,8 +114,7 @@ I graduated from **VESIT** with a 9.15 CGPA, but the education that stuck came f
 
 <br><br>
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=452Harsh&theme=github_dark" width="48%" alt="Top languages by repo" />
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=452Harsh&theme=github_dark" width="48%" alt="Most committed languages" />
+<img src="assets/languages.svg" width="100%" alt="Most used languages: JavaScript 35.7%, TypeScript 29.8%, Shell 18.1%, HTML 6.7%, CSS 5.1%, Python 1.3%" />
 
 <!-- github-readme-stats.vercel.app is currently returning 503s (public instance
      rate-limited). Re-enable when it recovers, or self-host your own instance:

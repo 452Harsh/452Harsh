@@ -1,0 +1,75 @@
+<svg width="1200" height="230" viewBox="0 0 1200 230" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Most used languages">
+  <defs>
+    <filter id="lg" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="36"/></filter>
+    <clipPath id="lclip"><rect width="1200" height="230" rx="20"/></clipPath>
+    <clipPath id="barclip"><rect x="48" y="120" width="1104" height="14" rx="7"/></clipPath>
+  </defs>
+  <style>
+    .f { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    .seg { transform-origin: 48px 0px; transform-box: view-box; animation: grow 1.6s cubic-bezier(.22,1,.36,1) both; }
+    @keyframes grow { from { transform: scaleX(0) } to { transform: scaleX(1) } }
+    .leg { animation: in .6s cubic-bezier(.22,1,.36,1) both; }
+    .l1 { animation-delay: .5s } .l2 { animation-delay: .62s } .l3 { animation-delay: .74s }
+    .l4 { animation-delay: .86s } .l5 { animation-delay: .98s } .l6 { animation-delay: 1.1s } .l7 { animation-delay: 1.22s }
+    @keyframes in { from { opacity: 0; transform: translateY(8px) } to { opacity: 1; transform: translateY(0) } }
+    .name { font-size: 13.5px; font-weight: 600; fill: #C9D1D9; }
+    .val { font-size: 12px; font-weight: 500; fill: #8B949E; }
+  </style>
+  <g clip-path="url(#lclip)">
+    <rect width="1200" height="230" fill="#11161D"/>
+    <ellipse cx="1100" cy="0" rx="260" ry="100" fill="#58A6FF" opacity="0.1" filter="url(#lg)"/>
+    <ellipse cx="80" cy="230" rx="240" ry="90" fill="#7C3AED" opacity="0.1" filter="url(#lg)"/>
+
+    <text x="48" y="52" class="f" font-size="19" font-weight="700" fill="#F0F6FC">Most Used Languages</text>
+    <text x="48" y="78" class="f" font-size="13" fill="#8B949E">By code volume across public repos — notebooks excluded, honesty included.</text>
+
+    <g clip-path="url(#barclip)">
+      <rect x="48" y="120" width="1104" height="14" fill="#F0F6FC" fill-opacity="0.06"/>
+      <rect class="seg" x="48" y="120" width="394" height="14" fill="#F7DF6E" opacity="0.85"/>
+      <rect class="seg" x="442" y="120" width="329" height="14" fill="#58A6FF" style="animation-delay:.1s"/>
+      <rect class="seg" x="771" y="120" width="200" height="14" fill="#7C3AED" style="animation-delay:.2s"/>
+      <rect class="seg" x="971" y="120" width="74" height="14" fill="#00E5FF" opacity="0.9" style="animation-delay:.3s"/>
+      <rect class="seg" x="1045" y="120" width="56" height="14" fill="#A78BFA" opacity="0.85" style="animation-delay:.4s"/>
+      <rect class="seg" x="1101" y="120" width="15" height="14" fill="#34D399" opacity="0.8" style="animation-delay:.5s"/>
+      <rect class="seg" x="1116" y="120" width="36" height="14" fill="#8B949E" opacity="0.55" style="animation-delay:.6s"/>
+    </g>
+
+    <g class="leg l1">
+      <circle cx="56" cy="176" r="5" fill="#F7DF6E" opacity="0.85"/>
+      <text x="70" y="181" class="f name">JavaScript</text>
+      <text x="70" y="200" class="f val">35.7%</text>
+    </g>
+    <g class="leg l2">
+      <circle cx="216" cy="176" r="5" fill="#58A6FF"/>
+      <text x="230" y="181" class="f name">TypeScript</text>
+      <text x="230" y="200" class="f val">29.8%</text>
+    </g>
+    <g class="leg l3">
+      <circle cx="376" cy="176" r="5" fill="#7C3AED"/>
+      <text x="390" y="181" class="f name">Shell</text>
+      <text x="390" y="200" class="f val">18.1%</text>
+    </g>
+    <g class="leg l4">
+      <circle cx="536" cy="176" r="5" fill="#00E5FF" opacity="0.9"/>
+      <text x="550" y="181" class="f name">HTML</text>
+      <text x="550" y="200" class="f val">6.7%</text>
+    </g>
+    <g class="leg l5">
+      <circle cx="696" cy="176" r="5" fill="#A78BFA" opacity="0.85"/>
+      <text x="710" y="181" class="f name">CSS</text>
+      <text x="710" y="200" class="f val">5.1%</text>
+    </g>
+    <g class="leg l6">
+      <circle cx="856" cy="176" r="5" fill="#34D399" opacity="0.8"/>
+      <text x="870" y="181" class="f name">Python</text>
+      <text x="870" y="200" class="f val">1.3%</text>
+    </g>
+    <g class="leg l7">
+      <circle cx="1016" cy="176" r="5" fill="#8B949E" opacity="0.55"/>
+      <text x="1030" y="181" class="f name">Other</text>
+      <text x="1030" y="200" class="f val">3.3%</text>
+    </g>
+
+    <rect x="0.5" y="0.5" width="1199" height="229" rx="19.5" stroke="#F0F6FC" stroke-opacity="0.1"/>
+  </g>
+</svg>
